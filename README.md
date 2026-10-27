@@ -1,18 +1,17 @@
-# RYK!LE Official Artist Website
+# RYK!LE Official Artist Site — bilingual starter
 
-A responsive static website for GitHub Pages.
+A responsive, single-page artist website for GitHub Pages. It includes Japanese/English switching, original lightweight canvas motion, scroll reveals, and reduced-motion accessibility support. It uses no external JavaScript libraries or image assets.
 
-## Publish with GitHub Pages
+## Before publishing
+- Replace the SoundCloud and Instagram homepage links in `index.html` with RYK!LE's actual artist profile URLs.
+- Verify all biography copy, track titles, and public-release status. The listed works are provisional examples.
+- Replace `EST. 20XX` with a real date or remove it.
 
-1. Sign in to GitHub as `rykile`.
-2. Create a **public** repository named `rykile.github.io` (exactly).
-3. Upload `index.html` to the repository root and commit it to `main`.
-4. Open **Settings → Pages**. Under Build and deployment, choose **Deploy from a branch**, select `main` and `/(root)`, then Save.
-5. Wait a few minutes, then visit https://rykile.github.io/
+## Publish on GitHub Pages
+1. Create a **public** repository named `rykile.github.io` at https://github.com/new
+2. Upload `index.html` and `README.md` to the repository root and commit.
+3. Open **Settings → Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/(root)`, then Save.
+5. After deployment, visit https://rykile.github.io/ (first publication may take a few minutes).
 
-## Before launch
-- Replace the SoundCloud and Instagram links with your official profile URLs.
-- Confirm which songs are publicly released before describing them as releases.
-- Add only contact information you want to make public.
-
-No build tools are required.
+No build step is needed. The animation is drawn with the browser canvas API and respects `prefers-reduced-motion`.
